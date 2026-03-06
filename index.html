@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bernedoodle Puppies From Local Breeders | MyPuppies.co</title>
+  <meta name="description" content="Find healthy, family-raised Bernedoodle puppies from verified local breeders. No middlemen, no shipping. Connect directly with breeders near you.">
+  <meta property="og:title" content="Bernedoodle Puppies From Local Breeders | MyPuppies.co">
+  <meta property="og:description" content="Find healthy, family-raised Bernedoodle puppies from verified local breeders near you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mypuppies.co/bernedoodle-puppies">
+  <link rel="canonical" href="https://mypuppies.co/bernedoodle-puppies">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #002a48;
+      background: #fff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ========== BRAND TOKENS ========== */
+    :root {
+      --navy: #003459;
+      --navy-light: #004a7c;
+      --orange: #ff7b00;
+      --orange-light: #ffab5f;
+      --cream: #ffe7ba;
+      --cream-bg: #fff8ef;
+      --white: #ffffff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-500: #6b7280;
+      --gray-700: #374151;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,52,89,0.08);
+      --shadow-md: 0 4px 16px rgba(0,52,89,0.1);
+      --shadow-lg: 0 8px 32px rgba(0,52,89,0.12);
+      --max-width: 1200px;
+    }
+
+    /* ========== UTILITIES ========== */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+    .section { padding: 80px 0; }
+    .section-alt { background: var(--cream-bg); }
+    .section-navy { background: var(--navy); color: var(--white); }
+    .text-center { text-align: center; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      gap: 8px;
+    }
+    .btn-primary {
+      background: var(--orange);
+      color: var(--white);
+    }
+    .btn-primary:hover {
+      background: #e86e00;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-secondary {
+      background: var(--white);
+      color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+    .btn-secondary:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .btn-white {
+      background: var(--white);
+      color: var(--navy);
+    }
+    .btn-white:hover {
+      background: var(--cream);
+      transform: translateY(-1px);
+    }
+    .btn-lg { padding: 18px 40px; font-size: 18px; }
+
+    h1 { font-size: 48px; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; }
+    h2 { font-size: 36px; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; }
+    h3 { font-size: 22px; font-weight: 600; line-height: 1.3; }
+    .subtitle { font-size: 20px; color: var(--gray-500); line-height: 1.5; max-width: 640px; }
+    .subtitle-light { font-size: 20px; color: rgba(255,255,255,0.8); line-height: 1.5; max-width: 640px; }
+
+    /* ========== HEADER / NAV ========== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .nav-logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+    .nav-logo span { color: var(--orange); }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-weight: 500; font-size: 15px; color: var(--gray-700); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta {
+      background: var(--orange);
+      color: var(--white);
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #e86e00; }
+    .nav-mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .nav-mobile-toggle svg { width: 28px; height: 28px; color: var(--navy); }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 140px 0 56px;
+      background: linear-gradient(135deg, var(--cream-bg) 0%, var(--white) 50%, #f0f7ff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(255,171,95,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cream);
+      color: var(--navy);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .hero-badge svg { width: 18px; height: 18px; }
+    .hero h1 { margin-bottom: 20px; color: var(--navy); }
+    .hero .subtitle { margin-bottom: 36px; }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-image {
+      position: relative;
+      z-index: 1;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-image-placeholder {
+      text-align: center;
+      padding: 40px;
+      color: var(--gray-500);
+    }
+    .hero-image-placeholder .emoji { font-size: 80px; margin-bottom: 12px; display: block; }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--gray-200);
+    }
+    .hero-stat-number { font-size: 28px; font-weight: 800; color: var(--navy); }
+    .hero-stat-label { font-size: 14px; color: var(--gray-500); margin-top: 2px; }
+
+    /* ========== BREED INFO ========== */
+    .breed-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .breed-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-200);
+      transition: all 0.2s ease;
+    }
+    .breed-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .breed-card-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 16px;
+      background: var(--cream-bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+    .breed-card h3 { margin-bottom: 8px; font-size: 18px; }
+    .breed-card p { font-size: 15px; color: var(--gray-500); line-height: 1.5; }
+
+    /* ========== HOW IT WORKS ========== */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .step {
+      text-align: center;
+      position: relative;
+    }
+    .step-number {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 20px;
+      background: var(--orange);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .step h3 { margin-bottom: 8px; font-size: 18px; }
+    .step p { font-size: 15px; color: var(--gray-500); }
+    .step-connector {
+      position: absolute;
+      top: 24px;
+      left: calc(50% + 32px);
+      width: calc(100% - 64px);
+      height: 2px;
+      background: var(--gray-200);
+    }
+    .step:last-child .step-connector { display: none; }
+
+    /* ========== DIFFERENTIATOR ========== */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 48px;
+    }
+    .diff-content h2 { margin-bottom: 20px; }
+    .diff-content p { color: rgba(255,255,255,0.8); font-size: 17px; line-height: 1.7; margin-bottom: 32px; }
+    .diff-points { display: grid; gap: 20px; }
+    .diff-point {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .diff-point-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,123,0,0.2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .diff-point-icon svg { width: 20px; height: 20px; color: var(--orange-light); }
+    .diff-point h3 { font-size: 17px; color: var(--white); margin-bottom: 4px; }
+    .diff-point p { font-size: 15px; color: rgba(255,255,255,0.7); margin: 0; }
+
+    .diff-visual {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+    }
+    .comparison-header {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 12px;
+      padding: 0 0 14px;
+      border-bottom: 2px solid rgba(255,255,255,0.15);
+      margin-bottom: 4px;
+    }
+    .comparison-header .comparison-them {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.4);
+    }
+    .comparison-header .comparison-us {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--orange-light);
+    }
+    .comparison-item {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 15px;
+    }
+    .comparison-item:last-child { border-bottom: none; }
+    .comparison-label { color: rgba(255,255,255,0.6); }
+    .comparison-us { color: var(--orange-light); font-weight: 600; }
+    .comparison-them { color: rgba(255,255,255,0.4); }
+
+    /* ========== TESTIMONIALS ========== */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-200);
+    }
+    .testimonial-stars { color: var(--orange); font-size: 18px; margin-bottom: 16px; letter-spacing: 2px; }
+    .testimonial-text { font-size: 16px; line-height: 1.6; color: var(--gray-700); margin-bottom: 20px; font-style: italic; }
+    .testimonial-author { font-weight: 600; font-size: 15px; color: var(--navy); }
+    .testimonial-location { font-size: 14px; color: var(--gray-500); }
+
+    /* ========== FAQ ========== */
+    .faq-list {
+      max-width: 800px;
+      margin: 48px auto 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 24px 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      font-family: inherit;
+    }
+    .faq-question:hover { color: var(--orange); }
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      transform: rotate(45deg);
+    }
+    .faq-item.collapsed .faq-icon {
+      background: var(--gray-100);
+      color: inherit;
+      transform: rotate(0deg);
+    }
+    .faq-answer {
+      max-height: 300px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-answer-inner {
+      padding: 0 0 24px;
+      font-size: 16px;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+    .faq-item.collapsed .faq-answer { max-height: 0; }
+
+    /* ========== ACTION TILES ========== */
+    .action-section {
+      background: linear-gradient(135deg, var(--cream-bg) 0%, #fff 100%);
+    }
+    .action-layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .action-tiles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      width: 100%;
+      max-width: 900px;
+    }
+    .action-tile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      padding: 28px 32px;
+      border-radius: var(--radius-lg);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      gap: 20px;
+    }
+    .action-tile-primary {
+      background: var(--orange);
+      color: var(--white);
+      box-shadow: 0 4px 24px rgba(255,123,0,0.25);
+    }
+    .action-tile-primary:hover {
+      background: #e86e00;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(255,123,0,0.35);
+    }
+    .action-tile-secondary {
+      background: var(--white);
+      color: var(--navy);
+      border: 2px solid var(--gray-200);
+      box-shadow: var(--shadow-sm);
+    }
+    .action-tile-secondary:hover {
+      border-color: var(--navy);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .action-tile-icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+    .action-tile-text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .action-tile-title {
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .action-tile-sub {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+
+    /* ========== FINAL CTA ========== */
+    .final-cta {
+      background: var(--navy);
+      text-align: center;
+      padding: 80px 0;
+    }
+    .final-cta h2 { color: var(--white); margin-bottom: 16px; }
+    .final-cta p { color: rgba(255,255,255,0.7); font-size: 18px; margin-bottom: 36px; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .final-cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      background: #001d30;
+      color: rgba(255,255,255,0.5);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer a { color: rgba(255,255,255,0.7); }
+    .footer a:hover { color: var(--white); }
+    .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+      h1 { font-size: 40px; }
+      h2 { font-size: 30px; }
+      .breed-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      .step-connector { display: none; }
+      .testimonial-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 60px 0; }
+      h1 { font-size: 32px; }
+      h2 { font-size: 26px; }
+      .subtitle, .subtitle-light { font-size: 17px; }
+
+      .nav-links { display: none; }
+      .nav-mobile-toggle { display: block; }
+
+      .hero { padding: 100px 0 60px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero-stats { gap: 24px; }
+      .hero-stat-number { font-size: 22px; }
+      .hero-buttons { flex-direction: column; }
+      .hero-buttons .btn { width: 100%; }
+
+      .breed-grid { grid-template-columns: 1fr; gap: 16px; }
+      .breed-card { padding: 24px 20px; }
+
+      .steps { grid-template-columns: 1fr; gap: 40px; }
+
+      .diff-grid { grid-template-columns: 1fr; gap: 40px; }
+
+      .testimonial-grid { grid-template-columns: 1fr; }
+
+      .action-tiles { grid-template-columns: 1fr; }
+      .action-tile { padding: 24px 20px; }
+
+      .final-cta-buttons { flex-direction: column; align-items: center; }
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="https://mypuppies.co" class="nav-logo">My<span>Puppies</span></a>
+      <div class="nav-links">
+        <a href="#why-bernedoodles">Why Bernedoodles</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://mypuppies.co/allpuppies?breed=Bernedoodle&priceRange=10000" class="nav-cta">Find a Puppy</a>
+      </div>
+      <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Verified Breeders Only
+          </div>
+          <h1>Find Your Bernedoodle Puppy <span style="color: var(--orange);">|</span> Local<br>Massachusetts Breeders</h1>
+          <p class="subtitle">No middlemen. No shipping. Just healthy, family-raised Bernedoodle puppies from verified breeders near you.</p>
+          <div class="hero-stats" style="margin-top: 32px; padding-top: 0; border-top: none;">
+            <div>
+              <div class="hero-stat-number">500+</div>
+              <div class="hero-stat-label">Puppies Placed</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">4.9/5</div>
+              <div class="hero-stat-label">Google Rating</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">Local</div>
+              <div class="hero-stat-label">Breeders Only</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-placeholder">
+            <!-- Replace this div with an actual image: -->
+            <!-- <img src="bernedoodle-hero.jpg" alt="Happy Bernedoodle puppy"> -->
+            <span class="emoji">&#x1F436;</span>
+            <p>Replace with hero photo<br>(Bernedoodle puppy, 800x600px minimum)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AVAILABLE PUPPIES ========== -->
+  <section class="section" style="padding: 48px 0 56px;" id="available-puppies">
+    <div class="container text-center">
+      <h2>Available Bernedoodle Puppies</h2>
+      <p class="subtitle" style="margin: 16px auto 0;">Meet some of our current Bernedoodle puppies ready for their forever homes.</p>
+      <!-- NOTE: On the live Next.js site, this section dynamically loads puppy cards from the database.
+           For the static version, we show a CTA linking to the filtered listings page.
+           When integrating into the live site, replace this with the PuppyGrid component filtered to Bernedoodle. -->
+      <div style="margin-top: 32px; padding: 60px 40px; background: var(--cream-bg); border-radius: var(--radius-lg); border: 2px dashed var(--gray-200);">
+        <p style="font-size: 48px; margin-bottom: 16px;">&#x1F43E;</p>
+        <p style="font-size: 18px; color: var(--gray-700); margin-bottom: 24px;">Puppy listings load dynamically on the live site.<br>Click below to see available Bernedoodles.</p>
+        <a href="https://mypuppies.co/allpuppies?breed=Bernedoodle&priceRange=10000" class="btn btn-primary btn-lg">View All Bernedoodle Puppies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY BERNEDOODLES ========== -->
+  <section class="section" id="why-bernedoodles">
+    <div class="container text-center">
+      <h2>Why Families Love Bernedoodles</h2>
+      <p class="subtitle" style="margin: 16px auto 0;">Bernedoodles combine the best of Bernese Mountain Dogs and Poodles &mdash; loyal, gentle, and strikingly beautiful.</p>
+      <div class="breed-grid">
+        <div class="breed-card">
+          <div class="breed-card-icon">&#x1F476;</div>
+          <h3>Gentle Giants With a Soft Side</h3>
+          <p>Bernedoodles inherit the calm, affectionate nature of the Bernese Mountain Dog. They are gentle with children, patient with other pets, and deeply loyal to their families.</p>
+        </div>
+        <div class="breed-card">
+          <div class="breed-card-icon">&#x2728;</div>
+          <h3>Low-Shedding Coats</h3>
+          <p>Thanks to their Poodle heritage, Bernedoodles tend to shed much less than other large breeds. Curlier coats shed the least, though no dog is truly hypoallergenic.</p>
+        </div>
+        <div class="breed-card">
+          <div class="breed-card-icon">&#x1F393;</div>
+          <h3>Smart &amp; Eager to Please</h3>
+          <p>Bernedoodles are highly intelligent and love making their owners happy. They pick up training quickly and respond well to positive reinforcement.</p>
+        </div>
+        <div class="breed-card">
+          <div class="breed-card-icon">&#x2764;&#xFE0F;</div>
+          <h3>Playful Yet Calm</h3>
+          <p>Bernedoodles have the perfect balance of energy and calmness. They love playtime and outdoor adventures but are equally happy curling up on the couch with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section section-alt" id="how-it-works">
+    <div class="container text-center">
+      <h2>How MyPuppies Works</h2>
+      <p class="subtitle" style="margin: 16px auto 0;">We connect you directly with breeders. No brokers, no middlemen.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-connector"></div>
+          <h3>Browse Local Puppies</h3>
+          <p>Search Bernedoodle puppies from verified breeders in your area with photos and health details.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-connector"></div>
+          <h3>Connect With the Breeder</h3>
+          <p>Message the breeder directly. No middlemen, no brokers &mdash; just you and your local breeder.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-connector"></div>
+          <h3>Visit in Person</h3>
+          <p>Schedule a visit to meet your puppy and see where they were raised before making any commitment.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Take Your Puppy Home</h3>
+          <p>Bring home your new family member with complete health records and our health guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOT A BROKER ========== -->
+  <section class="section section-navy" id="why-us">
+    <div class="container">
+      <div class="diff-grid">
+        <div class="diff-content">
+          <h2>We're Not a Broker.<br>We're a Better Way to Find Your Puppy.</h2>
+          <p>Many puppy websites act as middlemen &mdash; they mark up prices and stand between you and the breeder. MyPuppies is different. We connect you directly with local, verified breeders. You deal with the breeder. You visit the breeder. You buy from the breeder.</p>
+          <div class="diff-points">
+            <div class="diff-point">
+              <div class="diff-point-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <h3>Verified Breeders Only</h3>
+                <p>Every breeder is vetted for ethical practices and puppy health standards.</p>
+              </div>
+            </div>
+            <div class="diff-point">
+              <div class="diff-point-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              </div>
+              <div>
+                <h3>Health Guaranteed</h3>
+                <p>All puppies come with health records and vaccination history.</p>
+              </div>
+            </div>
+            <div class="diff-point">
+              <div class="diff-point-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <h3>Local Focus</h3>
+                <p>We connect local breeders with local buyers. No shipping puppies across the country.</p>
+              </div>
+            </div>
+            <div class="diff-point">
+              <div class="diff-point-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h3>Direct Pricing</h3>
+                <p>The price you see is what the breeder charges. No broker markups.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="diff-visual">
+          <div class="comparison-header">
+            <span class="comparison-label"></span>
+            <span class="comparison-them">Typical Puppy Sites</span>
+            <span class="comparison-us">MyPuppies</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Pricing</span>
+            <span class="comparison-them">Marked up</span>
+            <span class="comparison-us">Direct from breeder</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Who you talk to</span>
+            <span class="comparison-them">Sales rep</span>
+            <span class="comparison-us">The actual breeder</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Visit before buying</span>
+            <span class="comparison-them">Rarely</span>
+            <span class="comparison-us">Always encouraged</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Puppy delivery</span>
+            <span class="comparison-them">Shipped</span>
+            <span class="comparison-us">Local pickup</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Health records</span>
+            <span class="comparison-them">Sometimes</span>
+            <span class="comparison-us">Always included</span>
+          </div>
+          <div class="comparison-item">
+            <span class="comparison-label">Meet the parents</span>
+            <span class="comparison-them">Not possible</span>
+            <span class="comparison-us">Visit the breeder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section" id="testimonials">
+    <div class="container text-center">
+      <h2>What Families Are Saying</h2>
+      <p class="subtitle" style="margin: 16px auto 0;">Real families who found their Bernedoodle through MyPuppies.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"We had lost our 15 yr old cockapoo back in March and decided to look for a new baby to be best friends with our 2 year old. Everyone at Hess made it such a wonderful experience, matching us with a beautiful mini bernedoodle! He was 6 lbs when we got him at 8 weeks, now 5 months and 25 lbs!"</p>
+          <div class="testimonial-author">Krista Miller</div>
+          <div class="testimonial-location">Massachusetts</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"It's been a year since we brought Nova home, and she has been an amazing addition to our family. She is gentle with kids, very loving, and truly enjoys being around people. Nova has a calm, sweet temperament and has brought so much joy into our home. It's clear she was raised with a lot of care and love."</p>
+          <div class="testimonial-author">Shrividya Gopi</div>
+          <div class="testimonial-location">Massachusetts</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"The process was incredibly smooth. The breeders were awesome to work with. Now for Lil Boo!! What a great dog, very healthy, very smart. Everything you'd ever want in a doodle. She's 7 months old and we love her very much!!"</p>
+          <div class="testimonial-author">Frank Moynihan</div>
+          <div class="testimonial-location">Massachusetts</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section section-alt" id="faq">
+    <div class="container text-center">
+      <h2>Frequently Asked Questions</h2>
+      <p class="subtitle" style="margin: 16px auto 0;">Everything you need to know about finding your Bernedoodle.</p>
+      <div class="faq-list" style="text-align:left;">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is MyPuppies a puppy broker?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. We are not a broker and never stand between you and the breeder. We're a platform that connects families with local, verified breeders. You deal directly with the breeder for everything &mdash; pricing, visits, and purchase.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How much do Bernedoodle puppies cost?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Prices vary by breeder, size, and generation. You'll see pricing on each listing, set directly by the breeder. There are no hidden fees or markups from MyPuppies.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I visit the breeder before buying?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Absolutely &mdash; we encourage it. Our platform focuses on local connections so you can visit the breeder, meet the puppy's parents, and see where your puppy was raised.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What health guarantees are included?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">All puppies listed on MyPuppies come with health records and vaccination history. Our verified breeders provide health guarantees. Details vary by breeder and are listed on each puppy's profile.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What sizes do Bernedoodles come in?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Bernedoodles come in standard (61&ndash;100 lbs, up to 29" tall), mini (20&ndash;45 lbs, up to 22" tall), and toy/micro (under 20 lbs, 12&ndash;17" tall). You can filter by size when browsing available puppies on our site.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How is MyPuppies different from other puppy websites?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We focus exclusively on local connections. No shipping, no middlemen, no broker fees. We verify every breeder on our platform, and you always deal directly with your local breeder.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Your Perfect Bernedoodle Is Closer Than You Think</h2>
+      <p>Browse puppies from verified local breeders and bring home a healthy, happy family member.</p>
+      <div class="final-cta-buttons">
+        <a href="https://mypuppies.co/allpuppies?breed=Bernedoodle&priceRange=10000" class="btn btn-primary btn-lg">Browse Bernedoodle Puppies</a>
+        <a href="#contact" class="btn btn-white btn-lg">Contact a Breeder</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://mypuppies.co">Home</a>
+        <a href="https://mypuppies.co/about">About Us</a>
+        <a href="https://mypuppies.co/shop">All Puppies</a>
+        <a href="https://mypuppies.co/breeders">Breeders</a>
+        <a href="https://mypuppies.co/health-guarantee">Health Guarantee</a>
+      </div>
+      <p>&copy; 2026 MyPuppies.co. All rights reserved. Raised by local families.</p>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // FAQ Accordion
+    function toggleFaq(button) {
+      const item = button.parentElement;
+      item.classList.toggle('collapsed');
+    }
+
+    // Mobile menu (simple toggle)
+    function toggleMobileMenu() {
+      const links = document.querySelector('.nav-links');
+      if (links.style.display === 'flex') {
+        links.style.display = 'none';
+      } else {
+        links.style.display = 'flex';
+        links.style.flexDirection = 'column';
+        links.style.position = 'absolute';
+        links.style.top = '72px';
+        links.style.left = '0';
+        links.style.right = '0';
+        links.style.background = '#fff';
+        links.style.padding = '24px';
+        links.style.boxShadow = '0 8px 32px rgba(0,0,0,0.1)';
+        links.style.gap = '16px';
+      }
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        // Close mobile menu if open
+        const links = document.querySelector('.nav-links');
+        if (window.innerWidth <= 768) {
+          links.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
